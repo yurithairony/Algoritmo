@@ -1,4 +1,4 @@
-compile = ["gcc","./Aulas/Ex0001.c", "-o", "./main"]
+compile = ["gcc","./main.c", "-o", "./main"]
 run = "./main"
 entrypoint = "main.c"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
