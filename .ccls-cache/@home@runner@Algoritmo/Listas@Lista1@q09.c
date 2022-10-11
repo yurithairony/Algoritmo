@@ -8,5 +8,6 @@ int main(void) {
         mdc = i;
     }
   }
-  printf("%d", mdc);
+  printf("%d\n", mdc);
+  return 0;
 }

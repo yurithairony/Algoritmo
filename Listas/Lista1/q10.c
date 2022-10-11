@@ -2,15 +2,9 @@
 
 int main () {
   int h1, m1, h2, m2, hora, min, tempo;
-  int fim = 1;
-  while (fim != 0) {
+  while (h1 != 0 && m1 != 0 && h2 != 0 && m2 != 0) {
   scanf("%d %d %d %d", &h1, &m1, &h2, &m2);
-
-  // fim do programa
-  if (h1 + m1 + h2 + m2 == 0) {
-    fim = 0; break;
   }
-    
   // hora 
   hora = h2 - h1;
   if (hora < 0) {
@@ -26,9 +20,6 @@ int main () {
   // converter em minutos
   tempo = min + hora * 60;
 
-  printf("%d\n", tempo);
-
-
-  }
+  printf("%d", tempo);
   return 0;
 }

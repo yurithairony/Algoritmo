@@ -9,9 +9,10 @@ int main(void) {
   m1 = (a11 * p1 + a21 * p2) / p1 + p2;
   m2 = (a12 * p1 + a22 * p2) / p1 + p2;
   if (m1 > m2) {
-    printf("1");
+    printf("1\n");
   }
   else {
-    printf("2");
+    printf("2\n");
   }
+  return 0;
   }

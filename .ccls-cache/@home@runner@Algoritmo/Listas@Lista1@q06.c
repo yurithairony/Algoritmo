@@ -9,5 +9,6 @@ int main(void) {
   else {
     a = a + 1;
   }
-  printf("%d", a);
+  printf("%d\n", a);
+  return 0;
 }

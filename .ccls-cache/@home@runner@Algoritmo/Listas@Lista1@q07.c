@@ -12,6 +12,7 @@ int main(void) {
     printf("1");
   }
   else {
-    printf("2");
+    printf("2\n");
   }
+  return 0;
   }
