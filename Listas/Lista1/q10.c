@@ -2,24 +2,27 @@
 
 int main () {
   int h1, m1, h2, m2, hora, min, tempo;
-  while (h1 != 0 && m1 != 0 && h2 != 0 && m2 != 0) {
+  int fim = 1;
+  while (fim != 0) {
   scanf("%d %d %d %d", &h1, &m1, &h2, &m2);
-  }
-  // hora 
-  hora = h2 - h1;
-  if (hora < 0) {
-    hora = hora + 24;
+
+  // fim do programa
+  if (h1 + m1 + h2 + m2 == 0) {
+    fim = 0; break;
   }
 
-  // minuto
+  // hora
+  hora = h2 * 60 - h1 * 60;
+  if (h2 <= h1) {
+    hora = (h2 + 24) * 60 - h1 * 60;
+  }
+
+  // minutos
   min = m2 - m1;
-  if (min < 0) {
-    min = min + 60 * hora;
+
+  // resposta
+  printf("%d\n", hora + min);
+    
   }
-
-  // converter em minutos
-  tempo = min + hora * 60;
-
-  printf("%d", tempo);
   return 0;
 }

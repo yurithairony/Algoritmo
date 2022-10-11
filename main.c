@@ -10,25 +10,19 @@ int main () {
   if (h1 + m1 + h2 + m2 == 0) {
     fim = 0; break;
   }
-    
-  // hora 
-  hora = h2 - h1;
-  if (hora < 0) {
-    hora = hora + 24;
+
+  // hora
+  hora = h2 * 60 - h1 * 60;
+  if (h2 <= h1) {
+    hora = (h2 + 24) * 60 - h1 * 60;
   }
 
-  // minuto
+  // minutos
   min = m2 - m1;
-  if (min < 0) {
-    min = min + 60 * hora;
-  }
 
-  // converter em minutos
-  tempo = min + hora * 60;
-
-  printf("%d\n", tempo);
-
-
+  // resposta
+  printf("%d\n", hora + min);
+    
   }
   return 0;
 }

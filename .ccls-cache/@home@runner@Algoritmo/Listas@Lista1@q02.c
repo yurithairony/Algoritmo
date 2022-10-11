@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int media(double a, double b) {
+double media(double a, double b) {
   double m;
   m = (a + b) / 2;
   return m;

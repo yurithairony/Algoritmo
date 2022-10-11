@@ -7,6 +7,6 @@ int main(void) {
   scanf("%d", &b);
   hora = (b - a) / 60;
   min = (b - a) % 60;
-  printf("%d:%d", hora, min);
+  printf("%d:%d\n", hora, min);
   return 0;
 }
