@@ -3,10 +3,10 @@
 int main() {
   int a, b;
   scanf("%d %d", &a, &b);
-  if (a % 10000 == b % 10000) {
-    printf("encaixa\n");
+  if (a % 10000 == b) {
+    printf("encaixa");
   } else {
-    printf("nao encaixa\n");
+    printf("nao encaixa");
   }
   return 0;
 }
