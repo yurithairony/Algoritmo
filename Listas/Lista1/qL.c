@@ -11,7 +11,7 @@ int main() {
   if (div == 2) {
     printf("Sim");
   } else {
-    printf("Não");
+    printf("Nao");
   }
   
   

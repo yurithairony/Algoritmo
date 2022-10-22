@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main() {
-  int a, b;
-  scanf("%d %d", &a, &b);
-  if (a % 10000 == b % 10000) {
-    printf("encaixa\n");
-  } else {
-    printf("nao encaixa\n");
+int main(void) {
+  int n, i;
+  scanf("%d", &n);
+  for (i=1; i<n; i=i+1){
+    if (n % i == 0) {
+      printf("%d ", i);
+    }
   }
+  printf("%d\n", n);
   return 0;
 }
