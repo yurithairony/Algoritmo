@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-int main(void) {
-  int n, i;
-  scanf("%d", &n);
-  for (i=1; i<n; i=i+1){
-    if (n % i == 0) {
-      printf("%d ", i);
-    }
+int main() {
+  int populacao, dias;
+  dias = 1;
+  scanf("%d", &populacao);
+  for (int i=1; i<populacao; i*=2) {
+    dias ++;
   }
-  printf("%d\n", n);
+  printf("%d dias\n", dias);
   return 0;
 }
