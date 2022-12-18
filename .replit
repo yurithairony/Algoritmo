@@ -1,5 +1,7 @@
-compile = ["gcc","./main.c", "-o", "./main"]
-run = "./main"
+#compile = ["gcc","./main.c", "-o", "./main"]
+compile = ["gcc", "./teste01.c", "teste01.c" ,"array_list_int.c", "./teste01.c"]
+#run = "./main"
+run = "./teste01.c"
 entrypoint = "main.c"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 
